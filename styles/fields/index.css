@@ -1,3 +1,5 @@
+@import url(./droparea.css);
+
 input,
 textarea,
 select {
@@ -20,7 +22,8 @@ label {
 
 input:focus,
 select:focus,
-textarea:focus {
+textarea:focus,
+input[type="date"]:focus-within {
   outline: 0.25 solid var(--surface-secondary);
   border: 0.125rem solid var(--stroke-highlight);
 
@@ -48,6 +51,7 @@ input[type="date"] {
   }
 }
 
-select{
-  background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
+select {
+  background: url(../../assets/icons/arrow-down-01.svg) no-repeat
+    calc(100% - 1rem);
 }

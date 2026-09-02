@@ -109,13 +109,13 @@
             <fieldset class="address">
               <legend>Endereço residencial</legend>
 
-              <div class="inpu-wrapper">
+              <div class="input-wrapper">
                 <label for="cep">CEP</label>
                 <input type="text" id="cep" name="cep" />
               </div>
 
               <div class="flex">
-                <div class="inpu-wrapper flex-2">
+                <div class="input-wrapper flex-2">
                   <label for="street">Rua</label>
                   <input
                     type="text"
@@ -126,14 +126,14 @@
                   />
                 </div>
 
-                <div class="inpu-wrapper flex-1">
+                <div class="input-wrapper flex-1">
                   <label for="number">Numero</label>
                   <input type="number" id="number" name="number" value="123" />
                 </div>
               </div>
 
               <div class="flex">
-                <div class="inpu-wrapper flex-2">
+                <div class="input-wrapper flex-2">
                   <label for="city">Cidade</label>
                   <input
                     type="text"
@@ -144,7 +144,7 @@
                   />
                 </div>
 
-                <div class="inpu-wrapper flex-1">
+                <div class="input-wrapper flex-1">
                   <label for="state">Estado</label>
                   <input
                     type="text"
@@ -199,6 +199,44 @@
                     alt="icone de alerta vermelho"
                   />
                   <span>Insira um e-mail válido</span>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="enroll-options">
+              <legend>Opções de matrícula</legend>
+
+              <div class="input-wrapper">
+                <label>Selecione o turno de estudo</label>
+
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <input
+                      type="radio"
+                      name="study-shift"
+                      value="morning"
+                      id="morning"
+                    />
+                    <div class="radio-img"></div>
+                    <img
+                      src="./assets/icons/sun-cloud-02.svg"
+                      alt="icone de sol com nuvem"
+                    />
+                    <label for="morning">Manhã</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <input
+                      type="radio"
+                      name="study-shift"
+                      value="evening"
+                      id="evening"
+                    />
+                    <div class="radio-img"></div>
+
+                    <img src="./assets/icons/sun-02.svg" alt="icone de sol" />
+                    <label for="evening">tarde</label>
+                  </div>
                 </div>
               </div>
             </fieldset>

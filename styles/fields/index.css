@@ -56,19 +56,45 @@ select {
     calc(100% - 1rem);
 }
 
-
-.address .flex{
+.address .flex {
   gap: 1.25rem;
 }
 
-.inpu-wrapper:has([disabled]){
-  opacity: .5;
+.inpu-wrapper:has([disabled]) {
+  opacity: 0.5;
 }
 
-input{
-  &[disabled]{
+input {
+  &[disabled] {
     background-color: var(--surface-disabled);
     border-color: var(--stroke-default);
     color: var(--text-primary);
+  }
+
+  &:invalid {
+    border: 0.125rem solid var(--semantic-error);
+  }
+
+  & + small {
+    font: var(text-sm);
+    color: #78716c;
+    display: inline-block;
+    margin-top: 0.25rem;
+  }
+
+  &[required] + .erro {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.25rem;
+
+    font: var(--text-sm);
+    color: var(--semantic-error);
+
+    margin-top: 0.25rem;
+  }
+
+  &:not(:focus):valid + .erro {
+    display: none;
   }
 }
